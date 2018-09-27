@@ -1,0 +1,32 @@
+{
+  "SAIRPORT": {
+    "target": {
+      "object": "SAIRPORT",
+      "schema": "SFLIGHT",
+      "database": "HDB"
+    }
+  },
+  "SBOOK": {
+    "target": {
+      "object": "SBOOK",
+      "schema": "SFLIGHT",
+      "database": "HDB"
+    }
+  } ,
+  "SFLIGHT": {
+    "target": {
+      "object": "SFLIGHT",
+      "schema": "SFLIGHT",
+      "database": "HDB"
+    }
+  } ,
+  "SCARR": {
+    "target": {
+      "object": "SCARR",
+      "schema": "SFLIGHT",
+      "database": "HDB"
+    }
+  }
+	
+}
+

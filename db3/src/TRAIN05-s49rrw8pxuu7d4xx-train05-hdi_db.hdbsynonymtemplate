@@ -1,0 +1,15 @@
+{
+  "SBOOK_CV": {
+    "target": {
+      "object": "SBOOK_CV",
+      "grantor": "TRAIN05-s49rrw8pxuu7d4xx-train05-hdi_db"
+    }
+  },
+  
+  "SCARR_CV": {
+    "target": {
+      "object": "SCARR_CV",
+      "grantor": "TRAIN05-s49rrw8pxuu7d4xx-train05-hdi_db"
+    }
+  }
+}

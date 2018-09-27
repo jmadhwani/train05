@@ -1,0 +1,79 @@
+ID: train05
+_schema-version: '2.0'
+version: 0.0.1
+
+modules:
+ - name: db
+   type: hdb
+   path: db
+   requires:
+    - name: hdi_db
+      properties:
+        TARGET_CONTAINER: ~{hdi-container-name}
+
+
+
+    - name: SFLIGHT
+      group: SERVICE_REPLACEMENTS
+
+      properties:
+        key: ServiceName_1
+        service: ~{the-service-name}
+                          
+
+
+
+ 
+                          
+
+
+
+ - name: db3
+   type: hdb
+   path: db3
+   requires:
+    - name: hdi_db3
+      properties:
+        TARGET_CONTAINER: ~{hdi-container-name_2}
+
+
+
+    - name: cross-container-service-2
+      group: SERVICE_REPLACEMENTS
+
+      properties:
+        key: ServiceName_1
+        service: ~{the-service-name}
+                          
+
+
+resources:
+ - name: hdi_db
+   parameters:
+      config:
+         schema: ABC5
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
+
+ - name: SFLIGHT
+   properties:
+      the-service-name: ${service-name}
+   type: org.cloudfoundry.existing-service
+
+
+
+
+ - name: hdi_db3
+   properties:
+      hdi-container-name_2: ${service-name}
+   type: com.sap.xs.hdi-container
+
+
+ - name: cross-container-service-2
+   parameters:
+      service-name: TRAIN05-s49rrw8pxuu7d4xx-train05-hdi_db
+   properties:
+      the-service-name: ${service-name}
+   type: org.cloudfoundry.existing-service
+

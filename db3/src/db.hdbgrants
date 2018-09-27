@@ -1,0 +1,22 @@
+{
+    "TRAIN05-s49rrw8pxuu7d4xx-train05-hdi_db": {
+        "object_owner": {
+            "schema_roles": [
+                {
+                    "roles": [
+                        "schemarole#"
+                    ]
+                }
+            ]
+        },
+        "application_user": {
+            "schema_roles": [
+                {
+                    "roles": [
+                        "schemarole2"
+                    ]
+                }
+            ]
+        }
+    }
+}
